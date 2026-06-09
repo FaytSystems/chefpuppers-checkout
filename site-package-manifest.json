@@ -1,0 +1,57 @@
+{
+  "name": "chefpuppers-cloudflare-dynamic-checkout",
+  "type": "cloudflare-pages-with-functions",
+  "checkout_endpoint": "/api/create-checkout-session",
+  "created_for": "ChefPuppers.store",
+  "pricing_rules": {
+    "bundle": "Buy 3 of the same exact bag, get 1 free automatically for every group of 4.",
+    "shipping": {
+      "1_2_bags_cents": 695,
+      "3_5_bags_cents": 895,
+      "6_plus_bags_cents": 1095,
+      "free_shipping_threshold_after_discounts_cents": 5000
+    }
+  },
+  "notes": [
+    "Use GitHub integration or Wrangler for Pages Functions.",
+    "Set STRIPE_SECRET_KEY in Cloudflare environment variables.",
+    "Do not expose Stripe secret keys in public files.",
+    "Payment Links are not used in this dynamic checkout version.",
+    "Prices were updated from coupons.csv: SMALL10/20/50, MEDIUM10/20/50, LARGE10/20/50 Amount Off values."
+  ],
+  "pricing_source": "coupons.csv Amount Off column",
+  "prices_cents": {
+    "small": {
+      "50": 4000,
+      "10": 1000,
+      "20": 1800
+    },
+    "medium": {
+      "50": 4400,
+      "20": 2000,
+      "10": 1200
+    },
+    "large": {
+      "50": 5500,
+      "20": 2500,
+      "10": 1600
+    }
+  },
+  "package_name": "chefpuppers_cloudflare_dynamic_checkout_shipping_995_1995",
+  "updated_at_utc": "2026-06-09T07:11:24Z",
+  "shipping_rates": {
+    "1-2 bags": "$6.95",
+    "3-5 bags": "$9.95",
+    "6-9 bags": "$10.95",
+    "10+ bags": "$19.95",
+    "free_shipping": "disabled"
+  },
+  "rewritten_files": [
+    "public/index.html",
+    "public/app.js",
+    "functions/api/create-checkout-session.js",
+    "README.md",
+    "README_CLOUDFLARE_UPLOAD_FIRST.txt",
+    "site-package-manifest.json"
+  ]
+}

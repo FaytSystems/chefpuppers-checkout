@@ -1,0 +1,10 @@
+id,Created (UTC),Valid,Duration,Duration In Months,Percent Off,Amount Off,Currency,Redeem By (UTC),Max Redemptions,Times Redeemed
+LARGE50,2026-06-09 06:26,true,once,,,5500,usd,,,0
+LARGE20,2026-06-09 06:25,true,once,,,2500,usd,,,0
+LARGE10,2026-06-09 06:24,true,once,,,1600,usd,,,0
+MEDIUM50,2026-06-09 06:24,true,once,,,4400,usd,,,0
+MEDIUM20,2026-06-09 06:23,true,once,,,2000,usd,,,0
+MEDIUM10,2026-06-09 06:22,true,once,,,1200,usd,,,0
+SMALL50,2026-06-09 06:21,true,once,,,4000,usd,,,0
+SMALL10,2026-06-09 06:19,true,once,,,1000,usd,,,0
+SMALL20,2026-06-09 06:17,true,once,,,1800,usd,,,0
