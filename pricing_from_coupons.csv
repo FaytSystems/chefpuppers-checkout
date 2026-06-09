@@ -1,0 +1,10 @@
+productId,bagSize,price_cents,price_usd,source_coupon_code
+small,10,1000,10.00,SMALL10
+small,20,1800,18.00,SMALL20
+small,50,4000,40.00,SMALL50
+medium,10,1200,12.00,MEDIUM10
+medium,20,2000,20.00,MEDIUM20
+medium,50,4400,44.00,MEDIUM50
+large,10,1600,16.00,LARGE10
+large,20,2500,25.00,LARGE20
+large,50,5500,55.00,LARGE50
